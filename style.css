@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body::-webkit-scrollbar{
+  width: 50%;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#foottop{
+    font-size: 16px;
+}
+#footbot{
+    font-size: 12px;
+}
+#footr{
+    background: #135862;
+}
+#footend{
+    background: rgba(19,98,88,0.85);
+}
+#copyr{
+    text-align: center;
+    font-size: 12px;
+}
+#stt{
+   background: -webkit-linear-gradient(left, red , yellow);
+   background: -o-linear-gradient(right, red, yellow);
+   background: -moz-linear-gradient(right, red, yellow);
+   background: linear-gradient(to right, red , yellow); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+}
+#speclz{
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,61,0,0.25) ;
+}
+#comment{
+    background: rgba(0, 0, 0, 0.034);
+    border-radius: 15px;
+    border-bottom: solid 10px rgb(255, 174, 0);
+}
+#tab{
+    background-image: url(https://sulcdn.azureedge.net/content/images/section-bg.jpg);
+    
+}
+#charbox{
+    border-radius: 20px;
+    height: 100%;
+    background: rgba(255,255,255,0.85);
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.25);
+    transition: ease-in-out 0.2s
+}
+#charbox:hover{
+    transform: translateY(-10px);
+}
+#search{
+  border: none !important;
+  
+
+}
+input:focus{
+  outline: none;
+}
+
+
+
+
+
+
+
+
+  
+  @supports (display: grid) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: "header header header" "title title footer" "main main main";
+      
+    }
+    @media screen and (max-width: 500px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr auto 1fr;
+        grid-template-areas: "header" "title" "main" "footer";
+      }
+    }
+  
+    .grid-item {
+      color: #fff;
+      background: #135862;
+      padding: 0 1em 3em 0em;
+      
+      font-size: 1em;
+      font-weight: 700;
+
+
+    }
+ 
+  
+    .main {
+      color: #ffffff;
+      background-color: white;
+      grid-area: main;
+
+      overflow-x: scroll;
+      overflow-y: hidden;
+
+    }
+    .main::-webkit-scrollbar {
+        display: none;
+        
+      }
+
+    .items {
+      position: relative;
+      width: 100%;
+      overflow-x: scroll;
+     
+      overflow-y: hidden;
+      white-space: nowrap;
+
+      
+      will-change: transform;
+      user-select: none;
+      
+    }
+    .items::-webkit-scrollbar {
+        display: none;
+        
+      }
+  
+ 
+  
+    .item {
+      display: inline-block;
+      background: #135862;
+      margin-right: 3vw;
+      max-width: 100%;
+    
+      border-radius: 20px;
+      
+    }
+    .item:hover #thumb{
+      background-position: right;
+    }
+  }
+    #pricen{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    #teacher{
+        color: #FFDC83;
+    }
+    #price{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #date{
+        background: rgba(0, 0, 0, 0.12);
+        color: black;
+        font-weight: bold;
+    }
+    #month{
+        font-weight: normal;
+    }
+    #schedule{
+        background: rgba(0, 0, 0, 0.12);
+
+    }
+    #feedback{
+        background: rgba(255, 251, 0, 0.24);
+        border-radius: 20px;
+    }
+#vac{
+    background: linear-gradient(to right, #FF3D00 , #FFB800); 
+    color: white;
+    font-weight: 600;
+    box-shadow: none;
+}
+#ban{
+    background: linear-gradient(to right, #FF3D00 , #FFB800); 
+    color: white;
+    font-weight: 600;
+    box-shadow: none;
+}
+#nonactive{
+    background: rgba(0, 0, 0, 0.103);
+    
+}
+#nonactive p,#cred{
+    font-weight: 600;
+}
+
+
+#thumb{
+  border-radius: 20px;
+  transition: ease-in-out 0.5s;
+}
+
+#classes{
+  background: rgba(0, 0, 0, 0.075);
+  color: #000;
+}
+#classes:focus{
+  background: #000;
+  color: rgb(255, 255, 255);
+}
